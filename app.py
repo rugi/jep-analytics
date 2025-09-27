@@ -216,7 +216,7 @@ requirements.txt
         # Convertir Release a string primero y filtrar releases válidos
         df_filtrado_copy = df_filtrado.copy()
         df_filtrado_copy['Release'] = df_filtrado_copy['Release'].astype(str)
-        releases_unicos = df_filtrado_copy[df_filtrado_copy['Release'].str.match(r'^\d+
+        releases_unicos = df_filtrado_copy[df_filtrado_copy['Release'].str.match(r'^\d+$', na=False)]
     
     with col4:
         duracion_promedio = df_filtrado['Duration_Days'].mean()
@@ -546,7 +546,7 @@ requirements.txt
         # Convertir Release a string primero y filtrar releases válidos
         df_filtrado_copy = df_filtrado.copy()
         df_filtrado_copy['Release'] = df_filtrado_copy['Release'].astype(str)
-        releases_unicos = df_filtrado_copy[df_filtrado_copy['Release'].str.match(r'^\d+
+        releases_unicos = df_filtrado_copy[df_filtrado_copy['Release'].str.match(r'^\d+$', na=False)]
     
     with col4:
         duracion_promedio = df_filtrado['Duration_Days'].mean()
