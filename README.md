@@ -7,10 +7,15 @@ Creado como complemento para la charla: "3 JEPs que debes de conocer".
 ✨ Características
 
 📊 Tablas interactivas ordenables, filtrables y paginables
+
 📈 Gráficos dinámicos con Plotly
+
 🔍 Filtros avanzados por estado, año y autor
+
 📱 Responsive design funciona en móvil y desktop
+
 📥 Descarga de datos filtrados
+
 ⚡ Análisis en tiempo real
 
 📁 Estructura del Proyecto
