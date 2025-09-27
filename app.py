@@ -337,11 +337,7 @@ requirements.txt
     )
 
 if __name__ == "__main__":
-    main(), na=False)]['Release'].nunique()
-        st.metric(
-            label="🚀 Releases Afectados",
-            value=releases_unicos
-        )
+    main()
     
     with col4:
         duracion_promedio = df_filtrado['Duration_Days'].mean()
