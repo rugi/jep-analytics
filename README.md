@@ -31,8 +31,8 @@ jep-analytics/
 
 1. Instalar dependencias
 
-```
-install -r requirements.txt
+```bash
+pip install -r requirements.txt
 ```
 
 2. Copiar tu CSV
@@ -40,7 +40,7 @@ Coloca tu archivo datos_jeps.csv (generado por el parser Java) en el mismo direc
 
 3. Ejecutar localmente
 
-```
+```bash
 streamlit run app.py
 ```
 
