@@ -305,7 +305,7 @@ requirements.txt
     columns_to_show = st.multiselect(
         "Selecciona columnas a mostrar:",
         options=df_filtrado.columns.tolist(),
-        default=['Number', 'Title', 'Owner', 'Status', 'Release', 'Created']
+        default=['Number', 'Title', 'Release', 'Created']
     )
     
     if columns_to_show:
