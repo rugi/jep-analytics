@@ -44,7 +44,7 @@ def load_data():
     """Carga y procesa los datos de JEPs"""
     try:
         # Intentar cargar el CSV
-        df = pd.read_csv('datos_jeps.csv', sep='\t', encoding='utf-8')
+        df = pd.read_csv('datos_jeps.csv', sep=',', encoding='utf-8')
         
         # Limpiar datos y procesar fechas
         df['Created'] = pd.to_datetime(df['Created'], format='%Y/%m/%d', errors='coerce')
