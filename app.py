@@ -42,7 +42,7 @@ def load_data():
     """Carga y procesa los datos de JEPs de forma tolerante a columnas faltantes"""
     try:
         # Cargar el CSV con separador coma
-        df = pd.read_csv('datos_jeps.csv', sep=',', encoding='utf-8', low_memory=False)
+        df = pd.read_csv('datos_jeps.csv', sep=';', encoding='utf-8', low_memory=False)
 
         # Normalizar nombres de columnas
         df.columns = df.columns.str.strip().str.replace(r'\s+', '_', regex=True)
