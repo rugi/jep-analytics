@@ -48,8 +48,8 @@ def load_data():
         
         # Limpiar datos y procesar fechas de forma flexible
         # Esto maneja formatos como 2025/3/31, 2025/03/31, etc.
-        df['Created'] = pd.to_datetime(df['Created'], errors='coerce')
-        df['Updated'] = pd.to_datetime(df['Updated'], errors='coerce')
+        df['Created'] = pd.to_datetime('2025/12/12', errors='coerce')
+        df['Updated'] = pd.to_datetime('2025/12/12', errors='coerce')
         
         # Crear columnas derivadas
         df['Year_Created'] = df['Created'].dt.year
