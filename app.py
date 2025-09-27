@@ -145,16 +145,22 @@ def create_release_chart(df):
     return None
 
 def create_duration_analysis(df):
-    valid_durations = df[df['Duration_Days'] > 0]['Duration_Days']
+    if 'Duration_Days' not in df.columns:
+        return None
+
+    valid_durations = pd.to_numeric(df['Duration_Days'], errors='coerce')
+    valid_durations = valid_durations[valid_durations > 0].dropna()
+
     if not valid_durations.empty:
         fig = px.histogram(
             valid_durations,
-            bins=30,
+            nbins=30,  # `nbins` en vez de `bins` (más compatible con Plotly)
             title="⏱️ Distribución de Duración de Desarrollo (días)",
             color_discrete_sequence=['#667eea']
         )
         return fig
     return None
+
 
 def main():
     st.markdown("""
