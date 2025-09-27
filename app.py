@@ -49,9 +49,9 @@ def load_data():
         df['Year_Created'] = df['Created'].dt.year
         df['Duration_Days'] = (df['Updated'] - df['Created']).dt.days
 
-        df['Status'] = df['Status'].replace('REVISAR', 'Unknown')
-        df['Owner'] = df['Owner'].replace('REVISAR', 'Unknown')
-        df['Release'] = df['Release'].replace('REVISAR', 'TBD')
+        df['Status'] = 'Cerrado'
+        df['Owner'] = 'Sun'
+        df['Release'] = '25'
 
         return df
     except FileNotFoundError:
