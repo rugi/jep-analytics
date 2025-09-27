@@ -58,7 +58,7 @@ def load_data():
         # Limpiar valores nulos y "REVISAR"
         df['Status'] = 'Unknown'
         df['Owner'] = 'Unknown'
-        df['Release'] = 25
+        df['Release'] = '25'
         
         return df
     except FileNotFoundError:
