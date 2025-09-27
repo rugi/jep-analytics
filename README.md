@@ -29,6 +29,8 @@ jep-analytics/
 
 🛠️ Setup Local
 
+0. Python 3.13 
+
 1. Instalar dependencias
 
 ```bash
