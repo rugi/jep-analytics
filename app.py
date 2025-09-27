@@ -44,8 +44,8 @@ def load_data():
         df = pd.read_csv('datos_jeps.csv', sep='\t', encoding='utf-8')
         df.columns = df.columns.str.strip().str.replace('\s+', '_', regex=True)
 
-        df['Created'] = pd.to_datetime(df['Created'], errors='coerce')
-        df['Updated'] = pd.to_datetime(df['Updated'], errors='coerce')
+        df['Created'] = pd.to_datetime('2025/12/12', errors='coerce')
+        df['Updated'] = pd.to_datetime('2024/12/12', errors='coerce')
         df['Year_Created'] = df['Created'].dt.year
         df['Duration_Days'] = (df['Updated'] - df['Created']).dt.days
 
