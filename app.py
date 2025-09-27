@@ -39,23 +39,54 @@ st.markdown("""
 
 @st.cache_data
 def load_data():
-    """Carga y procesa los datos de JEPs"""
+    """Carga y procesa los datos de JEPs de forma tolerante a columnas faltantes"""
     try:
-        df = pd.read_csv('datos_jeps.csv', sep='\t', encoding='utf-8')
-        df.columns = df.columns.str.strip().str.replace('\s+', '_', regex=True)
+        # Cargar el CSV con separador coma
+        df = pd.read_csv('datos_jeps.csv', sep=',', encoding='utf-8', low_memory=False)
 
-        df['Created'] = pd.to_datetime('2025/12/12', errors='coerce')
-        df['Updated'] = pd.to_datetime('2024/12/12', errors='coerce')
+        # Normalizar nombres de columnas
+        df.columns = df.columns.str.strip().str.replace(r'\s+', '_', regex=True)
+
+        # ---- Manejo seguro de columnas ----
+        # Fechas
+        if 'Created' in df.columns:
+            df['Created'] = pd.to_datetime(df['Created'], errors='coerce')
+        else:
+            df['Created'] = pd.NaT
+
+        if 'Updated' in df.columns:
+            df['Updated'] = pd.to_datetime(df['Updated'], errors='coerce')
+        else:
+            df['Updated'] = pd.NaT
+
+        # Año de creación
         df['Year_Created'] = df['Created'].dt.year
+
+        # Duración
         df['Duration_Days'] = (df['Updated'] - df['Created']).dt.days
 
-        df['Status'] = 'Cerrado'
-        df['Owner'] = 'Sun'
-        df['Release'] = '25'
+        # Status
+        if 'Status' not in df.columns:
+            df['Status'] = 'Unknown'
+        else:
+            df['Status'] = df['Status'].replace('REVISAR', 'Unknown').fillna('Unknown')
+
+        # Owner
+        if 'Owner' not in df.columns:
+            df['Owner'] = 'Unknown'
+        else:
+            df['Owner'] = df['Owner'].replace('REVISAR', 'Unknown').fillna('Unknown')
+
+        # Release
+        if 'Release' not in df.columns:
+            df['Release'] = 'TBD'
+        else:
+            df['Release'] = df['Release'].replace('REVISAR', 'TBD').fillna('TBD')
 
         return df
+
     except FileNotFoundError:
-        st.error("❌ No se encontró el archivo 'datos_jeps.csv'.")
+        st.error("❌ No se encontró el archivo 'datos_jeps.csv'. Asegúrate de tenerlo en el mismo directorio.")
         return None
     except Exception as e:
         st.error(f"❌ Error al cargar los datos: {str(e)}")
