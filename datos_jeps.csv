@@ -1,12 +1,7 @@
-Number,Title,Owner,Type,Scope,Status,Release,Component,Discussion,Effort,Duration,Relates_to,Reviewed_by,Endorsed_by,Created,Updated,Issue
-1212,REVISAR,Ian Graves,Feature JDK,Cerrado,Cerrado,25,core-libs,panama dash dev at openjdk dot org,XS,XS,JEP 489:Vector API (Ninth Incubator),Jatin Bhateja Sandhya Viswanathan Vladimir Ivanov,Paul Sandoz,2025/03/31,2025/05/21,  8353296
-323,REVISAR,Paul Sandoz,Feature JDK,Cerrado,Cerrado,24,core-libs,panama dash dev at openjdk dot org,XS,XS,JEP 469:Vector API (Eighth Incubator),Jatin Bhateja Sandhya Viswanathan Vladimir Ivanov,John Rose,2024/09/24,2025/04/10,  8340841
-
-
-
-
-
-
-
-
-
+Number;Title;Owner;Type;Scope;Status;Release;Component;Discussion;Effort;Duration;Relates_to;Reviewed_by;Endorsed_by;Created;Updated;Issue
+1;JEP 1: JDK Enhancement-Proposal & Roadmap Process;Mark Reinhold;Process;JDK;Active;REVISAR;REVISAR;discuss at openjdk dot java dot net;REVISAR;REVISAR;null;null;null;2011/06/23;2018/03/30;8046185
+2;JEP 2: JEP Template;Mark Reinhold;Process;JDK;Active;REVISAR;REVISAR;discuss at openjdk dot java dot net;REVISAR;REVISAR;null;null;null;2011/06/23;2022/06/14;8046186
+3;JEP 3: JDK Release Process;Mark Reinhold;Process;JDK;Active;REVISAR;REVISAR;jdk dash dev at openjdk dot java dot net;REVISAR;REVISAR;null;null;null;2018/06/19;2024/12/02;8205352
+11;JEP 11: Incubator Modules;Chris Hegarty;Process;JDK;Active;REVISAR;REVISAR;jdk dash dev at openjdk dot java dot net;S;S;null;Alan Bateman, Alex Buckley, Brian Goetz, Paul Sandoz;Brian Goetz;2016/11/16;2024/04/22;8169768
+12;JEP 12: Preview Features;Alex Buckley;Process;SE;Active;REVISAR;REVISAR;jdk dash dev at openjdk dot java dot net;M;M;null;Alan Bateman, Brian Goetz, Mark Reinhold;Mark Reinhold;2018/01/19;2025/04/26;8195734
+14;JEP 14: The Tip & Tail Model of Library Development;Alex Buckley;Informational;JDK;Active;REVISAR;REVISAR;jdk dash dev at openjdk dot org;REVISAR;REVISAR;null;Alan Bateman, Mark Reinhold, Paul Sandoz;null;2024/09/30;2025/02/24;8341287
