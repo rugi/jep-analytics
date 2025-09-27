@@ -44,11 +44,12 @@ def load_data():
     """Carga y procesa los datos de JEPs"""
     try:
         # Intentar cargar el CSV
-        df = pd.read_csv('datos_jeps.csv', sep=',', encoding='utf-8')
+        df = pd.read_csv('datos_jeps.csv', sep='\t', encoding='utf-8')
         
-        # Limpiar datos y procesar fechas
-        df['Created'] = pd.to_datetime(df['Created'], format='%Y/%m/%d', errors='coerce')
-        df['Updated'] = pd.to_datetime(df['Updated'], format='%Y/%m/%d', errors='coerce')
+        # Limpiar datos y procesar fechas de forma flexible
+        # Esto maneja formatos como 2025/3/31, 2025/03/31, etc.
+        df['Created'] = pd.to_datetime(df['Created'], errors='coerce')
+        df['Updated'] = pd.to_datetime(df['Updated'], errors='coerce')
         
         # Crear columnas derivadas
         df['Year_Created'] = df['Created'].dt.year
