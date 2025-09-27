@@ -1,4 +1,5 @@
 Number,  Title,  Owner,  Type,  Scope,  Status,  Release,  Component,  Discussion,  Effort,  Duration,  Relates_to,  Reviewed_by,  Endorsed_by,  Created,  Updated,  Issue
-N,  REVISAR,  Ian Graves,  Feature JDK,  Closed/Delivered,  25,  core-libs,  panama dash dev at openjdk dot org,  XS,  XS,  JEP 489:Vector API (Ninth Incubator),  Jatin Bhateja Sandhya Viswanathan Vladimir Ivanov,  Paul Sandoz,  2025/3/31,  2025/5/21,  8353296
-N,  REVISAR,  Paul Sandoz,  Feature JDK,  Closed/Delivered,  24,  core-libs,  panama dash dev at openjdk dot org,  XS,  XS,  JEP 469:Vector API (Eighth Incubator),  Jatin Bhateja Sandhya Viswanathan Vladimir Ivanov,  John Rose,  2024/9/24,  2025/4/10,  8340841
+N,  REVISAR,  Ian Graves,  Feature JDK,  Closed, Delivered,  25,  core-libs,  panama dash dev at openjdk dot org,  XS,  XS,  JEP 489:Vector API (Ninth Incubator),  Jatin Bhateja Sandhya Viswanathan Vladimir Ivanov,  Paul Sandoz,  2025/3/31,  2025/5/21,  8353296
+N,  REVISAR,  Paul Sandoz,  Feature JDK,  Closed, Delivered,  24,  core-libs,  panama dash dev at openjdk dot org,  XS,  XS,  JEP 469:Vector API (Eighth Incubator),  Jatin Bhateja Sandhya Viswanathan Vladimir Ivanov,  John Rose,  2024/9/24,  2025/4/10,  8340841
+
 
