@@ -441,7 +441,7 @@ if __name__ == "__main__":
     )
 
 if __name__ == "__main__":
-    main(), na=False)]
+    main() 
     
     if not valid_releases.empty:
         release_counts = valid_releases['Release'].value_counts().sort_index()
@@ -646,7 +646,7 @@ requirements.txt
     )
 
 if __name__ == "__main__":
-    main(), na=False)]['Release'].nunique()
+    main() 
         st.metric(
             label="🚀 Releases Afectados",
             value=releases_unicos
