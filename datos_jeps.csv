@@ -1,0 +1,18 @@
+Number  Title   Owner   Type    Scope   Status  Release Component       Discussion      Effort  Duration        Relates_to      Reviewed_by     Endorsed_by     Created Updated     Issue
+REVISAR REVISAR Ian Graves      Feature JDK     Closed / Delivered      25      core-libs       panama dash dev at openjdk dot org      XS      XS      JEP 489: Vector API 
+(Ninth Incubator)       Jatin Bhateja, Sandhya Viswanathan, Vladimir Ivanov     Paul Sandoz     2025/3/31       2025/5/21       8353296
+REVISAR REVISAR Paul Sandoz     Feature JDK     Closed / Delivered      24      core-libs       panama dash dev at openjdk dot org      XS      XS      JEP 469: Vector API 
+(Eighth Incubator)      Jatin Bhateja, Sandhya Viswanathan, Vladimir Ivanov     John Rose       2024/9/24       2025/4/10       8340841
+REVISAR REVISAR Paul Sandoz     Feature JDK     Closed / Delivered      23      core-libs       panama dash dev at openjdk dot org      XS      XS      JEP 460: Vector API 
+(Seventh Incubator)     Vladimir Ivanov John Rose       2024/2/27       2025/2/25       8326878
+REVISAR REVISAR Paul Sandoz     Feature JDK     Closed / Delivered      22      core-libs       panama dash dev at openjdk dot org      XS      XS      JEP 448: Vector API 
+(Sixth Incubator)       Vladimir Ivanov John Rose       2023/9/8        2025/2/25       8315945
+REVISAR REVISAR Paul Sandoz     Feature JDK     Closed / Delivered      21      core-libs       panama dash dev at openjdk dot org      S       S       JEP 438: Vector API 
+(Fifth Incubator)       Vladimir Ivanov John Rose       2023/4/11       2024/4/9        8305868
+REVISAR REVISAR Paul Sandoz     Feature JDK     Closed / Delivered      20      core-libs       panama dash dev at openjdk dot org      XS      XS      JEP 426: Vector API 
+(Fourth Incubator)      Alex Buckley    John Rose       2023/2/27       2023/5/31       8303262
+REVISAR REVISAR Paul Sandoz     Feature JDK     Closed / Delivered      19      core-libs       panama dash dev at openjdk dot java dot net     M       M       JEP 438: Vector API (Fifth Incubator)       John Rose, Vladimir Kozlov      John Rose       2022/1/18       2023/5/12       8280173
+REVISAR REVISAR Paul Sandoz     Feature JDK     Closed / Delivered      18      core-libs       panama dash dev at openjdk dot java dot net     L       M       JEP 426: Vector API (Fourth Incubator)      John Rose, Vladimir Ivanov, Vladimir Kozlov     John Rose, Vladimir Kozlov      2021/6/24       2023/5/12       8269306
+REVISAR REVISAR Paul Sandoz     Feature JDK     Closed / Delivered      17      core-libs       panama dash dev at openjdk dot java dot net     M       M       JEP 338: Vector API (Incubator)     John Rose, Maurizio Cimadamore, Vladimir Ivanov John Rose, Vladimir Kozlov      2021/2/12       2023/2/27       8261663
+REVISAR REVISAR Paul Sandoz     Feature JDK     Closed / Delivered      16      hotspot / compiler      panama dash dev at openjdk dot java dot net     M       M       JEP 
+414: Vector API (Second Incubator)      John Rose, Maurizio Cimadamore, Yang Zhang      John Rose, Vladimir Kozlov      2018/4/6        2021/8/28       8201271
