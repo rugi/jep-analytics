@@ -125,7 +125,7 @@ def create_release_chart(df):
     # Convertir Release a string y filtrar releases válidos (números)
     df_copy = df.copy()
     df_copy['Release'] = df_copy['Release'].astype(str)
-    valid_releases = df_copy[df_copy['Release'].str.match(r'^\d+
+    valid_releases = df_copy[df_copy['Release'].str.match(r'^\d+$', na=False)]
 
 def create_duration_analysis(df):
     """Análisis de duración de desarrollo"""
