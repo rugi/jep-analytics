@@ -5,7 +5,7 @@ from datetime import datetime
 
 # Configuración de la página
 st.set_page_config(
-    page_title="JEP Analytics Dashboard",
+    page_title="JEP Analytics Dashboard by RuGI",
     page_icon="☕",
     layout="wide",
     initial_sidebar_state="expanded"
