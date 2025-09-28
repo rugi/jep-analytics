@@ -42,7 +42,7 @@ pip install -r requirements.txt
 ```
 
 2. Copiar tu CSV
-Coloca tu archivo datos_jeps.csv (generado por el parser Java) en el mismo directorio que app.py.
+Asegurate que el archivo: datos_jeps.csv (generado por un crawler) se encuentra en el mismo directorio que app.py.
 
 3. Ejecutar localmente
 
