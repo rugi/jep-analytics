@@ -41,7 +41,7 @@ Python 3.13
 pip install -r requirements.txt
 ```
 
-2. Copiar tu CSV
+2. Tener acceso al archivo con los datos.
 Asegurate que el archivo: datos_jeps.csv (generado por un crawler) se encuentra en el mismo directorio que app.py.
 
 3. Ejecutar localmente
